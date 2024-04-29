@@ -54,7 +54,7 @@ https://docs.google.com/document/d/1YYGt09VnRJynmAzYpUc0cddTI8M4xewBS1aIbsCRtyQ/
 				<sub><b>Дмитрий Мамыкин</b></sub>
 			</a>
 			<br/>
-			<sub>Backend<br/>Academic leave</sub>
+			<sub>Backend</sub>
 		</td>
 	</tr>
 </table>
