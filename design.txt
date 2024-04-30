@@ -1,0 +1,8 @@
+Шрифт
+Roboto, Geneva, Arial, Helvetica, sans-serif
+
+Цвета
+Темно-зеленый: #607C70
+Зеленый: #D0E8DD
+Светло-зеленый: #E8F3EE
+Белый: #FFFFFF
