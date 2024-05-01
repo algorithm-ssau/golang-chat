@@ -4,6 +4,19 @@ import './Message.scss';
 class Message extends Component{
     constructor(props){
         super(props);
-        let tmp= JSON.parse(this.props.message);
+        let temp = JSON.parse(this.props.message);
+        this.state={
+            message: temp
+        }
     }
+
+    render(){
+        return(
+            <div className = "Message">
+                {this.state.Message.body}
+            </div>
+        );
+    };
 }
+
+export default Message;
