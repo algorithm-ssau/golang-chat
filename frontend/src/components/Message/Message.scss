@@ -1,0 +1,16 @@
+.Message{
+    display: block;
+    background-color: #FFFFFF;
+    margin: 10px auto;
+    box-shadow: 0 5px 15px -5px #E8F3EE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    clear: both;
+    color: #607C70;
+    font-family: Roboto, Geneva, Arial, Helvetica, sans-serif;
+
+    &.me{
+        float: right;
+        background-color: #D0E8DD;
+    }
+}
