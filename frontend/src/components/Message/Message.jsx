@@ -13,7 +13,7 @@ class Message extends Component{
     render(){
         return(
             <div className = "Message">
-                {this.state.Message.body}
+                {this.state.message.body}
             </div>
         );
     };
