@@ -1,16 +1,14 @@
-.Message{
+.Message {
     display: block;
-    background-color: #FFFFFF;
+    background-color: #B2B1B9;
     margin: 10px auto;
-    box-shadow: 0 5px 15px -5px #E8F3EE;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.2);
     padding: 10px 20px;
     border-radius: 5px;
-    clear: both;
-    color: #607C70;
-    font-family: Roboto, Geneva, Arial, Helvetica, sans-serif;
-
-    &.me{
-        float: right;
-        background-color: #D0E8DD;
+    clear:both;
+  
+    &.me {
+      color: rgb(31, 28, 70);
+      float: right;
     }
-}
+  }

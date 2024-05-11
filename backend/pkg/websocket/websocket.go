@@ -19,5 +19,6 @@ func Upgrade(w http.ResponseWriter, r *http.Request) (*websocket.Conn, error) {
 		log.Println(err)
 		return nil, err
 	}
+
 	return conn, nil
 }
