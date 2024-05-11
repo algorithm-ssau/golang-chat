@@ -22,8 +22,7 @@ type Message struct {
 
 func (c *Client) Read() {
 	defer func() {
-		c.Pool.Unregister <- c
-		c.Conn.Close()
+		c.Read()
 	}()
 
 	for {
