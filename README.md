@@ -28,7 +28,7 @@ https://docs.google.com/document/d/1YYGt09VnRJynmAzYpUc0cddTI8M4xewBS1aIbsCRtyQ/
 				<sub><b>Рахматуллов Рустам</b></sub>
 			</a>
 			<br />
-			<sub>New team lead</br>Frontend</br></sub>
+			<sub>New team lead</br>Frontend</br>Backend</sub>br</sub>
 		</td>
 		<td align="left" valign="top">
 			<a href="https://github.com/RinaLeem">
