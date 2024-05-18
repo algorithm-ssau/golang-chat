@@ -3,7 +3,7 @@
 Закрытый чат для крутых ребят! Этот чат предоставляет возможность общаться онлайн с другими пользователями, сохраняя конфиденциальность и безопасность вашей переписки.
 
 ## Тезисы
-https://docs.google.com/document/d/1YYGt09VnRJynmAzYpUc0cddTI8M4xewBS1aIbsCRtyQ/edit?usp=sharing
+https://docs.google.com/document/d/1VoZVJX8ckGNN7_jl0w7iKrnP7duMHNo1JHgFcIXGwjM/edit?usp=sharing
 
 ## Функционал
 
