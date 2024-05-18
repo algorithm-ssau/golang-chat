@@ -18,13 +18,31 @@ https://docs.google.com/document/d/1YYGt09VnRJynmAzYpUc0cddTI8M4xewBS1aIbsCRtyQ/
 - Node.js
 - React.js
 
-## Установка приложения
-1. Склонировать  репозиторий на диск : `git clone https://github.com/algorithm-ssau/golang-chat`
-2. Зайти в папку: `cd golang-chat`
-3. Зайти в папку бэкенд: `cd backend`
-4. Запустить следующую команду в терминале в папке: `go run main.go`
-5. Зайти в папку фронтенд:`cd ../frontend`
-6. Запустить следующую команду в терминале в папке: `npm start`
+## Установка и запуск приложения
+1. Склонировать  репозиторий на диск :
+```bash
+git clone https://github.com/algorithm-ssau/golang-chat
+```
+2. Зайти в папку:
+```bash
+cd golang-chat
+```
+3. Зайти в папку бэкенд:
+```bash
+cd backend
+```
+4. Запустить следующую команду в терминале в папке:
+```bash
+go run main.go
+```
+5. Зайти в папку фронтенд:
+```bash
+cd ../frontend
+```
+6. Запустить следующую команду в терминале в папке:
+```bash
+npm start
+```
 7. Чат будет доступен по ссылке: http://localhost:3000 
 
 ## Авторы
