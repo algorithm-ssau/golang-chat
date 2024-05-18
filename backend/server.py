@@ -9,6 +9,23 @@ from starlette.responses import JSONResponse
 from pydantic import BaseModel
 
 
+def get_logger(name=__file__, file='log.txt', encoding='utf-8'):
+    log = logging.getLogger(name)
+    log.setLevel(logging.DEBUG)
+
+    formatter = logging.Formatter('[%(asctime)s] %(filename)s:%(lineno)d %(levelname)-8s %(message)s')
+
+    fh = logging.FileHandler(file, encoding=encoding)
+    fh.setFormatter(formatter)
+    log.addHandler(fh)
+
+    sh = logging.StreamHandler(stream=sys.stdout)
+    sh.setFormatter(formatter)
+    log.addHandler(sh)
+
+    return log
+
+
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
@@ -38,6 +55,7 @@ def clientthread(conn, addr):
             else:
                 remove(conn)
         except:
+            logger.info('Error')
             continue
 
 
@@ -50,6 +68,7 @@ def broadcast(message, connection):
                 clients.close()
 
                 # if the link is broken, we remove the client
+                logger.debug('Line is broken')
                 remove(clients)
 
 
