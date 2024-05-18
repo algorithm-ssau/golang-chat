@@ -1,4 +1,6 @@
 import socket
+import logging
+import sys
 from _thread import start_new_thread
 import select
 import sys
@@ -54,6 +56,7 @@ def clientthread(conn, addr):
                 logger.info(message_to_send)
                 broadcast(message_to_send, conn)
             else:
+                logger.info('Removing connection')
                 remove(conn)
         except:
             logger.info('Error')
@@ -66,6 +69,7 @@ def broadcast(message, connection):
             try:
                 clients.send(message)
             except:
+                logger.debug('Closing clients connection')
                 clients.close()
 
                 # if the link is broken, we remove the client
