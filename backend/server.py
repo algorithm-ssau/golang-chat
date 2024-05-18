@@ -42,15 +42,16 @@ list_of_clients = []
 
 
 def clientthread(conn, addr):
+    logger.info("Welcome to this chatroom!")
     conn.send("Welcome to this chatroom!")
 
     while True:
         try:
             message = conn.recv(2048)
             if message:
-                print("<" + addr[0] + "> " + message)
-
                 message_to_send = "<" + addr[0] + "> " + message
+                print(message_to_send)
+                logger.info(message_to_send)
                 broadcast(message_to_send, conn)
             else:
                 remove(conn)
@@ -81,6 +82,7 @@ while True:
     conn, addr = server.accept()
     list_of_clients.append(conn)
     print(addr[0] + " connected")
+    logger.info(addr[0] + " connected")
     start_new_thread(clientthread, (conn, addr))
 
 
