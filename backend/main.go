@@ -36,5 +36,5 @@ func setupRoutes() {
 func main() {
 	fmt.Println("Go full stack chat project")
 	setupRoutes()
-	http.ListenAndServe(":9000", nil)
+	http.ListenAndServe(":80", nil)
 }
