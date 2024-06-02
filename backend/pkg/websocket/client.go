@@ -21,14 +21,13 @@ type Message struct {
 }
 
 func (c *Client) Read() {
-	defer func() {
-		c.Read()
-	}()
-
 	for {
 		messageType, p, err := c.Conn.ReadMessage()
 		if err != nil {
+			log.Println("Error in client, closing connection")
 			log.Println(err)
+			c.Pool.Unregister <- c
+			c.Conn.Close()
 			return
 		}
 

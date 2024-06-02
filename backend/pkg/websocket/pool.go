@@ -1,6 +1,9 @@
 package websocket
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 type Pool struct {
 	Register   chan *Client
@@ -30,6 +33,7 @@ func (pool *Pool) Start() {
 			}
 			break
 		case client := <-pool.Unregister:
+			log.Println("Unregister client")
 			delete(pool.Clients, client)
 			fmt.Println("Size of Connection Pool: ", len(pool.Clients))
 			for client, _ := range pool.Clients {
@@ -41,7 +45,7 @@ func (pool *Pool) Start() {
 			for client, _ := range pool.Clients {
 				if err := client.Conn.WriteJSON(message); err != nil {
 					fmt.Println(err)
-					return
+					continue
 				}
 			}
 		}
