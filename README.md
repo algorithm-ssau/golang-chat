@@ -28,26 +28,15 @@ git clone https://github.com/algorithm-ssau/golang-chat
 ```
 2. Зайти в папку:
 ```bash
-cd golang-chat
+cd golang-chat/frontend
 ```
-3. Зайти в папку бэкенд:
-```bash
-cd backend
-```
-4. Запустить следующую команду в терминале в папке:
-```bash
-go run main.go
-```
-5. Зайти в папку фронтенд:
-```bash
-cd ../frontend
-```
-6. Запустить следующую команду в терминале в папке:
+
+3. Запустить следующую команду в терминале в папке:
 ```bash
 npm install
 npm start
 ```
-7. Чат будет доступен по ссылке: http://localhost:3000 
+4. Чат будет доступен по ссылке: http://localhost:3000 
 
 ## Авторы
 
